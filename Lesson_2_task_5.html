@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>L2_T5</title>
+</head>
+<body>
+
+<script>
+var a, b
+
+a = Math.floor(Math.random() * 100)
+b = Math.floor(Math.random() * 100)
+operation = prompt();
+
+function mathematics(a, b) {
+  if (operation == '+') {
+    return console.log(a + b);
+  } else {
+    if (operation == '-') {
+      return console.log(a - b);
+    } else {
+      if (operation == '*') {
+        return console.log(a * b);
+      } else {
+        if (operation == '/') {
+          return console.log(a / b);
+        }
+      }
+
+    }
+
+  }
+}
+
+mathematics(a, b)
+
+
+</script>
+
+</body>
+</html>
