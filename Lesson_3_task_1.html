@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>L3_T1</title>
+</head>
+<body>
+<script>
+
+var i = 0
+
+
+while (i <= 100) {
+  let root = Math.ceil(Math.sqrt(i))
+  for (let q = 2; q <= root; q++) {
+    if (i % q === 0) {
+      i++;
+    } else if (i < 2) {
+      i++;
+    }
+  }
+  console.log(i);
+  i++
+}
+
+// ВАРИАНТ ВТОРОЙ
+// var i = 0
+
+
+// while (i <= 100) {
+
+//   for (let q = 2; q < i; q++) {
+//     if (i % q === 0) {
+//       i++;
+//     } else if (i < 2) {
+//       i++;
+//     }
+//   }
+//   console.log(i);
+//   i++
+// }
+
+
+</script>
+</body>
+</html>
