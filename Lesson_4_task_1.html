@@ -1,0 +1,33 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>L4_T1</title>
+</head>
+<body>
+<script>
+
+number = Math.floor(Math.random() * (999 - 0))
+console.log(number)
+
+function placeValue(number) {
+  var hundreds = Math.floor(number / 100)
+  var tens = Math.floor(number / 10 % 10)
+  var ones = number % 10
+
+  const values = {
+    "сотни": hundreds,
+    "десятки": tens,
+    "единицы": ones
+  }
+  console.log(values)
+}
+
+placeValue(number)
+
+
+</script>
+</body>
+</html>

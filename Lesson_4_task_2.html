@@ -1,0 +1,70 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>L4_T2</title>
+</head>
+<body>
+<script>
+
+const Hyundai = {
+  models: {
+    elantra: 32500,
+    tucson: 33000,
+    creta: 32000,
+    solaris: 18000
+  },
+  complectation: {
+    standard: 1500,
+    cruise: 2700,
+    lux: 3800
+  },
+  transmission: {
+    manual: 900,
+    automatic: 2500
+  }
+}
+
+const Toyota = {
+  models: {
+    corolla: 30000,
+    camry: 32000,
+    accord: 29000,
+    rav4: 34000,
+    prado: 40000
+  },
+  complectation: {
+    standard: 1500,
+    cruise: 2700,
+    lux: 3800
+  },
+  transmission: {
+    manual: 1100,
+    automatic: 3000
+  }
+}
+
+function price() {
+  var select_1 = prompt("Toyota or Hyundai")
+  if (select_1 == "Toyota") {
+    var toyota_models = prompt("corolla, camry, accord, rav4 or prado ?")
+    var select_complectation_toyota = prompt("standard, cruise or lux")
+    var select_transmission_toyota = prompt("manual or automatic")
+    var price_toyota = Toyota.models[toyota_models] + Toyota.complectation[select_complectation_toyota] + Toyota.transmission[select_transmission_toyota]
+    return price_toyota
+  } else {
+    var hyundai_models = prompt("elantra, tucson, creta or solaris ?")
+    var select_complectation_hyundai = prompt("standard, cruise or lux")
+    var select_transmission_hyundai = prompt("manual or automatic")
+    var price_hyundai = Hyundai.models[hyundai_models] + Hyundai.complectation[select_complectation_hyundai] + Hyundai.transmission[select_transmission_hyundai]
+    return price_hyundai
+  }
+}
+console.log(price())
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>L3_T2</title>
+</head>
+<body>
+<script>
+
+const avaliable_products = ['яблоки', 'тыква', 'арбуз', 'персики', 'бананы', 'апельсины', 'мандарины', 'киви', 'кокосы', 'манго', 'арахис', 'грибы', 'финики', 'грецкий орех', 'картошка', 'капуста', 'ананас', 'рис', 'гречка', 'рыба']
+
+const basket = []
+
+function purchased_items(){
+   var choice = prompt('введите наименование товара:')
+   if choice !===
+}
+
+
+
+const avaliable_products = ['яблоки', 'тыква', 'арбуз', 'персики', 'бананы', 'апельсины', 'мандарины', 'киви', 'кокосы', 'манго', 'арахис', 'грибы', 'финики', 'грецкий орех', 'картошка', 'капуста', 'ананас', 'рис', 'гречка', 'рыба']
+
+
+const basket = []
+var total_price = 0
+
+function purchased_items() {
+
+  var choice = prompt('введите наименование товара:')
+  while (choice !== "x") {
+    if (avaliable_products.includes(choice)) {
+      basket.push(choice)
+    } else(console.log('вы ввели что то непонятное'));
+    break
+  }
+}
+
+purchased_items()
+console.log(basket)
+
+</script>
+</body>
+</html>
